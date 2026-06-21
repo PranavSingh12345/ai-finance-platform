@@ -1,24 +1,39 @@
-# Full Stack AI Fianace Platform with Next JS, Supabase, Tailwind, Prisma, Inngest, ArcJet, Shadcn UI Tutorial 🔥🔥
-## https://youtu.be/egS6fnZAdzk
+# AI Finance Platform 💰
 
-<img width="1470" alt="Screenshot 2024-12-10 at 9 45 45 AM" src="https://github.com/user-attachments/assets/1bc50b85-b421-4122-8ba4-ae68b2b61432">
+A full-stack finance management platform built with Next.js, Prisma, Neon, Clerk, and Inngest.
 
-### Make sure to create a `.env` file with following variables -
+## 🚀 Tech Stack
 
-```
-DATABASE_URL=
-DIRECT_URL=
+- **Frontend:** Next.js 15, React 19, Tailwind CSS, Shadcn/ui
+- **Backend:** Next.js API Routes, Prisma ORM
+- **Database:** Neon (PostgreSQL)
+- **Authentication:** Clerk
+- **Background Jobs:** Inngest
+- **AI:** Gemini API (Receipt Scanning & Insights)
+- **Email:** Resend
+- **Security:** Arcjet
 
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
-NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
-NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/onboarding
-NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/onboarding
+## 📦 Features
 
-GEMINI_API_KEY=
+- 🔐 Authentication with Clerk
+- 💳 Account Management
+- 📊 Transaction Tracking
+- 🤖 AI-Powered Receipt Scanning
+- 📈 Monthly AI Reports
+- 🔄 Recurring Transactions
+- 📧 Email Reports
 
-RESEND_API_KEY=
+## 🚀 Getting Started
 
-ARCJET_KEY=
-```
+```bash
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.example .env.local
+
+# Run database migrations
+npx prisma db push
+
+# Start the development server
+npm run dev
